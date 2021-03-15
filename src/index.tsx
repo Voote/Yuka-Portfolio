@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { MuiThemeProvider } from '@material-ui/core';
+import { theme } from './assets/theme';
 import App from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <MuiThemeProvider theme={theme}>
     <App />
-  </React.StrictMode>,
+  </MuiThemeProvider>,
   document.getElementById('root')
 );
