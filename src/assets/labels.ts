@@ -4,5 +4,6 @@ export const labels = {
   noy: 'NOY',
   art: 'ART',
   space: ' ',
-  seeArts: 'SEE ARTS '
+  seeArts: 'SEE ARTS ',
+  arts: 'ARTS'
 };
