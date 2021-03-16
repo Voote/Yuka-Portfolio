@@ -3,12 +3,16 @@ import Arts from './containers/Arts';
 import AboutMe from './containers/AboutMe';
 import Landing from './containers/Landing';
 import Navbar from './components/navbar';
+import ArtPage from './containers/Arts/art-page';
 import './assets/styles.scss';
 
 const App = () => (
   <div>
     <Router>
       <Switch>
+        <Route path="/artpage">
+          <ArtPage />
+        </Route>
         <Route path="/landing">
           <Landing />
         </Route>

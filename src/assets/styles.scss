@@ -126,8 +126,11 @@ a {
     width: 100%;
     height: 100%;
     color: $textWhite;
-    &--bwhite {
+    &--black {
       background-image: url('./IMG/black-white.jpg');
+    }
+    &--white {
+      background-image: url('./IMG/goku-white.png');
     }
     &--noy {
       background-image: url('./IMG/TheNoy.jpg');
@@ -138,12 +141,14 @@ a {
   }
 
   &__img {
-    background-image: url('./IMG/Yuka_placeholder01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: 31vw;
     height: 31vw;
+    &--cat {
+      background-image: url('./IMG/Catalyn.jpg');
+    }
     &--duncan {
       background-image: url('./IMG/Duncan.jpg');
     }
@@ -171,9 +176,6 @@ a {
     }
     &--bwhite {
       background-image: url('./IMG/black-white.jpg');
-    }
-    &--zero {
-      background-image: url('./IMG/sub-zero.jpg');
     }
   }
 }

@@ -4,7 +4,7 @@ import Navbar from '../../components/navbar';
 import '../../assets/styles.scss';
 
 const AboutMe = () => (
-  <div className="background__placeholder background__placeholder--bwhite">
+  <div className="background__placeholder background__placeholder--black">
     <Navbar />
     <div>O mnie</div>
     <div>info</div>

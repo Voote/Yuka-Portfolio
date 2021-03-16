@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import { images } from './background-images';
 import Navbar from '../../components/navbar';
@@ -11,7 +11,9 @@ const Arts = () => (
       <Grid container>
         {images.map((element) => (
           <Grid item key={element.id} xs={4}>
-            <div className={element.class} />
+            <Link to="/artpage">
+              <div className={element.class} />
+            </Link>
           </Grid>
         ))}
       </Grid>
