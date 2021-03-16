@@ -1,4 +1,8 @@
-export const labels = {
+export type labelType = {
+  [key: string]: string;
+};
+
+export const labels: labelType = {
   about: 'ABOUT ME',
   the: 'THE ',
   noy: 'NOY',

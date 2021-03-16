@@ -10,7 +10,7 @@ const Header = () => (
       {labels.space}
       <span className="labels__logo--gold">
         {labels.art}
-        <i className="fab fa-facebook-messenger" />
+        {/* <i className="fab fa-facebook-messenger" /> */}
       </span>
     </span>
   </header>

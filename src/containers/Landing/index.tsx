@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import SMIcons from '../../components/icons';
 import Header from '../../components/header';

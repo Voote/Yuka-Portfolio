@@ -1,6 +1,4 @@
-import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import Arts from './containers/Arts';
 import AboutMe from './containers/AboutMe';
 import Landing from './containers/Landing';

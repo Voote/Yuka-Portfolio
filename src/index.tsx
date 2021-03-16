@@ -1,4 +1,3 @@
-import React from 'react';
 import { render } from 'react-dom';
 import { MuiThemeProvider } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';

@@ -1,13 +1,21 @@
-import React from 'react';
 // import { Link } from 'react-router-dom';
+import Grid from '@material-ui/core/Grid';
+import { images } from './background-images';
 import Navbar from '../../components/navbar';
 import '../../assets/styles.scss';
 
 const Arts = () => (
-  <div className="background__placeholder3">
+  <div className="background__placeholder background__placeholder--noy">
     <Navbar />
-    <div>Pustka</div>
-    <div>Teraz</div>
+    <div className="position__gallery">
+      <Grid container>
+        {images.map((element) => (
+          <Grid item key={element.id} xs={4}>
+            <div className={element.class} />
+          </Grid>
+        ))}
+      </Grid>
+    </div>
   </div>
 );
 

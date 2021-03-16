@@ -67,6 +67,7 @@ a {
       margin-bottom: 4vh;
       border-radius: 50px;
       border: 1px solid $textGold;
+      margin-top: 3vh;
     }
   }
 
@@ -77,6 +78,11 @@ a {
       margin: 0.5vh;
     }
   }
+
+  &__img {
+    width: 31vw;
+    height: 30vh;
+  }
 }
 
 .position {
@@ -85,11 +91,13 @@ a {
     display: flex;
     justify-content: flex-end;
   }
+
   &__top {
     margin: 4vh $sideDistance;
     display: flex;
     justify-content: space-between;
   }
+
   &__bottom {
     position: absolute;
     bottom: 3rem;
@@ -101,11 +109,15 @@ a {
       display: flex;
     }
   }
+
+  &__gallery {
+    margin: 1rem $sideDistance;
+  }
 }
 
 .background {
   &__placeholder {
-    background-image: url('./IMG/goku-white.png');
+    background-image: url('./IMG/goku-blue.jpg');
     background-color: black;
     background-size: contain;
     background-repeat: no-repeat;
@@ -114,29 +126,54 @@ a {
     width: 100%;
     height: 100%;
     color: $textWhite;
+    &--bwhite {
+      background-image: url('./IMG/black-white.jpg');
+    }
+    &--noy {
+      background-image: url('./IMG/TheNoy.jpg');
+      background-repeat: repeat;
+      height: auto;
+      background-position: center top;
+    }
   }
 
-  &__placeholder2 {
-    background-image: url('./IMG/black-white.jpg');
-    background-color: black;
-    background-size: contain;
+  &__img {
+    background-image: url('./IMG/Yuka_placeholder01.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
     background-position: center center;
-    width: 100%;
-    height: 100%;
-    color: $textWhite;
-  }
-
-  &__placeholder3 {
-    background-image: url('./IMG/goku-blue.jpg');
-    background-color: black;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    background-position: center center;
-    width: 100%;
-    height: 100%;
-    color: $textWhite;
+    width: 31vw;
+    height: 31vw;
+    &--duncan {
+      background-image: url('./IMG/Duncan.jpg');
+    }
+    &--lia {
+      background-image: url('./IMG/Lia.jpg');
+    }
+    &--man {
+      background-image: url('./IMG/StickMan.jpg');
+    }
+    &--noy {
+      background-image: url('./IMG/TheNoy.jpg');
+    }
+    &--wanda {
+      background-image: url('./IMG/Wanda.jpg');
+      background-position: center top;
+    }
+    &--black {
+      background-image: url('./IMG/goku-black.jpg');
+    }
+    &--blue {
+      background-image: url('./IMG/goku-blue.jpg');
+    }
+    &--white {
+      background-image: url('./IMG/goku-white.png');
+    }
+    &--bwhite {
+      background-image: url('./IMG/black-white.jpg');
+    }
+    &--zero {
+      background-image: url('./IMG/sub-zero.jpg');
+    }
   }
 }
