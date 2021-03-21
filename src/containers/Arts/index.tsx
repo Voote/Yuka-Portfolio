@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 
 import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
 import { images } from './background-images';
 import '../../assets/styles.scss';
 
@@ -19,6 +20,7 @@ const Arts = () => (
         ))}
       </Grid>
     </div>
+    <Footer />
   </div>
 );
 

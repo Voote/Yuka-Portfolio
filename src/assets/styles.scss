@@ -6,6 +6,8 @@ $regularFont: 1.1rem;
 $zero: 0rem;
 $sideDistance: 4vw;
 $transparentButton: #e9561636;
+$fadedElement: 70%;
+$silverLine: 2px solid silver;
 
 html,
 body {
@@ -40,12 +42,25 @@ a {
   &__navbar {
     font-size: 10px;
   }
+
+  &__footer {
+    font-size: 1.4em;
+    font-weight: 300;
+    letter-spacing: 0.4pt;
+    margin: 1vh;
+  }
 }
 
 .element {
-  &__line-bottom {
-    border-bottom: 2px solid silver;
-    margin-top: -3vh;
+  &__line {
+    &--bottom {
+      border-bottom: $silverLine;
+      margin-top: -3vh;
+    }
+    &--footer {
+      border-bottom: $silverLine;
+      opacity: $fadedElement;
+    }
   }
 
   &__button {
@@ -86,16 +101,19 @@ a {
 }
 
 .position {
-  &__header {
-    margin: 4vh $sideDistance;
-    display: flex;
-    justify-content: flex-end;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: $zero $sideDistance;
+  opacity: $fadedElement;
 
   &__top {
     margin: 4vh $sideDistance;
     display: flex;
     justify-content: space-between;
+
+    &--header {
+      justify-content: flex-end;
+    }
   }
 
   &__bottom {
@@ -112,6 +130,15 @@ a {
 
   &__gallery {
     margin: 1rem $sideDistance;
+  }
+
+  &__footer {
+    position: absolute;
+    width: 100%;
+    bottom: $zero;
+    &--icons {
+      margin: 1vh;
+    }
   }
 }
 

@@ -6,7 +6,7 @@ import '../../assets/styles.scss';
 
 const Landing = () => (
   <div className="background__placeholder">
-    <div className="position__header">
+    <div className="position__top position__top--header">
       <Link to="/about">
         <button className="element__button--nav">{labels.about}</button>
       </Link>
@@ -24,7 +24,7 @@ const Landing = () => (
           </button>
         </Link>
       </div>
-      <div className="element__line-bottom" />
+      <div className="element__line--bottom" />
     </div>
   </div>
 );

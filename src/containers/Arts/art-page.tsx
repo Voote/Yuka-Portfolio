@@ -1,5 +1,6 @@
 import '../../assets/styles.scss';
 import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
 import { Box } from '@material-ui/core';
 
 const ArtPage = () => (
@@ -24,6 +25,7 @@ const ArtPage = () => (
         </span>
       </div>
     </Box>
+    <Footer />
   </div>
 );
 
