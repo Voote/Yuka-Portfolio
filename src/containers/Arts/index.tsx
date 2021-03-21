@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
-import { images } from './background-images';
+
 import Navbar from '../../components/navbar';
+import { images } from './background-images';
 import '../../assets/styles.scss';
 
 const Arts = () => (

@@ -146,6 +146,15 @@ a {
     background-position: center center;
     width: 31vw;
     height: 31vw;
+    &--small {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left center;
+      width: 14vw;
+      height: 18vw;
+      margin: 1rem $zero;
+      margin-left: $sideDistance;
+    }
     &--cat {
       background-image: url('./IMG/Catalyn.jpg');
     }
