@@ -11,13 +11,16 @@ const Arts = () => (
     <Navbar />
     <div className="position__gallery">
       <Grid container>
-        {images.map((element) => (
-          <Grid item key={element.id} xs={4}>
-            <Link to={`/artpage/${element.id}`}>
-              <div className={element.class} />
-            </Link>
-          </Grid>
-        ))}
+        {images.map((element) => {
+          const imgClass = `background__img ${element.class}`;
+          return (
+            <Grid item key={element.id} xs={4}>
+              <Link to={`/artpage/${element.id}`}>
+                <div className={imgClass} />
+              </Link>
+            </Grid>
+          );
+        })}
       </Grid>
     </div>
     <Footer />

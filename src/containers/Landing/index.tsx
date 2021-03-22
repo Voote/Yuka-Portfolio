@@ -24,7 +24,7 @@ const Landing = () => (
           </button>
         </Link>
       </div>
-      <div className="element__line--bottom" />
+      <div className="element__line element__line--lifted" />
     </div>
   </div>
 );

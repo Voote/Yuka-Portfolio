@@ -10,7 +10,7 @@ interface objectType {
 export const images: objectType[] = [
   {
     id: 0,
-    class: 'background__img background__img--cat',
+    class: 'background__img--cat',
     name: 'Anyia',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
     tool: 'Photoshop',
@@ -18,7 +18,7 @@ export const images: objectType[] = [
   },
   {
     id: 1,
-    class: 'background__img background__img--noy',
+    class: 'background__img--noy',
     name: 'The Noy',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
     tool: 'Photoshop',
@@ -26,7 +26,7 @@ export const images: objectType[] = [
   },
   {
     id: 2,
-    class: 'background__img background__img--lia',
+    class: 'background__img--lia',
     name: 'Lia Moonlight',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
     tool: 'Photoshop',
@@ -34,7 +34,7 @@ export const images: objectType[] = [
   },
   {
     id: 3,
-    class: 'background__img background__img--duncan',
+    class: 'background__img--duncan',
     name: 'Duncan Dracohorn',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
     tool: 'Photoshop',
@@ -42,7 +42,7 @@ export const images: objectType[] = [
   },
   {
     id: 4,
-    class: 'background__img background__img--man',
+    class: 'background__img--man',
     name: 'Rhaelcur',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
     tool: 'Photoshop',
@@ -50,7 +50,7 @@ export const images: objectType[] = [
   },
   {
     id: 5,
-    class: 'background__img background__img--wanda',
+    class: 'background__img--wanda',
     name: 'Wanda Maximoff',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
     tool: 'Photoshop',
@@ -58,7 +58,7 @@ export const images: objectType[] = [
   },
   {
     id: 6,
-    class: 'background__img background__img--white',
+    class: 'background__img--white',
     name: 'SSJ Howaito',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
     tool: 'Photoshop',
@@ -66,7 +66,7 @@ export const images: objectType[] = [
   },
   {
     id: 7,
-    class: 'background__img background__img--blue',
+    class: 'background__img--blue',
     name: 'SSJ Blue',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
     tool: 'Photoshop',
@@ -74,8 +74,8 @@ export const images: objectType[] = [
   },
   {
     id: 8,
-    class: 'background__img background__img--cat',
-    name: 'Catalyn',
+    class: 'background__img--cat',
+    name: 'Anyia',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
     tool: 'Photoshop',
     date: 'Mar 2021'

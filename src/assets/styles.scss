@@ -2,10 +2,12 @@
 
 $textWhite: #fafafa;
 $textGold: #f6b004;
-$regularFont: 1.1rem;
-$zero: 0rem;
-$sideDistance: 4vw;
 $transparentButton: #e9561636;
+$zero: 0rem;
+$regularFont: 1.1rem;
+$labelsDistance: 3vw;
+$sideDistance: 4vw;
+$artHeight: 75vh;
 $fadedElement: 70%;
 $silverLine: 2px solid silver;
 
@@ -57,12 +59,11 @@ a {
 
 .element {
   &__line {
-    &--bottom {
-      border-bottom: $silverLine;
+    border-bottom: $silverLine;
+    &--lifted {
       margin-top: -3vh;
     }
     &--footer {
-      border-bottom: $silverLine;
       opacity: $fadedElement;
     }
   }
@@ -101,6 +102,10 @@ a {
   &__img {
     width: 31vw;
     height: 30vh;
+  }
+
+  &__active {
+    border: 1px solid $textGold;
   }
 }
 
@@ -144,6 +149,15 @@ a {
       margin: 1vh;
     }
   }
+
+  &__placeholder {
+    margin-right: auto;
+    width: 14.1vw;
+  }
+
+  &__labels {
+    margin: -1rem $labelsDistance;
+  }
 }
 
 .background {
@@ -178,13 +192,13 @@ a {
     width: 31vw;
     height: 31vw;
     &--big {
-      width: 40vw;
-      height: 40vw;
+      width: 37.6vw;
+      height: $artHeight;
     }
     &--small {
-      width: 14vw;
-      height: 18vw;
-      margin: 1rem $zero;
+      width: 9.3vw;
+      height: 24vh;
+      margin-bottom: 1vh;
       margin-left: $sideDistance;
     }
     &--left {
@@ -224,8 +238,9 @@ a {
   }
 
   &__black {
-    margin: auto;
-    padding: 15vw;
-    background: black;
+    width: 48.3vw;
+    height: $artHeight;
+    color: $textWhite;
+    // background: black;
   }
 }
