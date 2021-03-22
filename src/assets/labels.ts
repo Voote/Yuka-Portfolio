@@ -9,5 +9,7 @@ export const labels: labelType = {
   art: 'ART',
   space: ' ',
   seeArts: 'SEE ARTS ',
-  arts: 'ARTS'
+  arts: 'ARTS',
+  tool: 'Tool: ',
+  madeAt: 'Made at '
 };

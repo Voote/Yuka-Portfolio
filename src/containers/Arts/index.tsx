@@ -13,7 +13,7 @@ const Arts = () => (
       <Grid container>
         {images.map((element) => (
           <Grid item key={element.id} xs={4}>
-            <Link to="/artpage">
+            <Link to={`/artpage/${element.id}`}>
               <div className={element.class} />
             </Link>
           </Grid>

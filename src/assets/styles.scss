@@ -49,6 +49,10 @@ a {
     letter-spacing: 0.4pt;
     margin: 1vh;
   }
+
+  &__uppercase {
+    text-transform: uppercase;
+  }
 }
 
 .element {
@@ -129,7 +133,7 @@ a {
   }
 
   &__gallery {
-    margin: 1rem $sideDistance;
+    margin: 1rem $sideDistance 4rem $sideDistance;
   }
 
   &__footer {
@@ -173,14 +177,18 @@ a {
     background-position: center center;
     width: 31vw;
     height: 31vw;
+    &--big {
+      width: 40vw;
+      height: 40vw;
+    }
     &--small {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: left center;
       width: 14vw;
       height: 18vw;
       margin: 1rem $zero;
       margin-left: $sideDistance;
+    }
+    &--left {
+      background-position: left center;
     }
     &--cat {
       background-image: url('./IMG/Catalyn.jpg');
@@ -213,5 +221,11 @@ a {
     &--bwhite {
       background-image: url('./IMG/black-white.jpg');
     }
+  }
+
+  &__black {
+    margin: auto;
+    padding: 15vw;
+    background: black;
   }
 }

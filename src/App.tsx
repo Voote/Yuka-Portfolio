@@ -1,8 +1,12 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom';
 import Arts from './containers/Arts';
 import AboutMe from './containers/AboutMe';
 import Landing from './containers/Landing';
-import Navbar from './components/navbar';
 import ArtPage from './containers/Arts/art-page';
 import './assets/styles.scss';
 
@@ -10,7 +14,7 @@ const App = () => (
   <div>
     <Router>
       <Switch>
-        <Route path="/artpage">
+        <Route path="/artpage/:id">
           <ArtPage />
         </Route>
         <Route path="/landing">
@@ -23,7 +27,7 @@ const App = () => (
           <AboutMe />
         </Route>
         <Route path="/">
-          <Navbar />
+          <Redirect to="/landing" />
         </Route>
       </Switch>
     </Router>

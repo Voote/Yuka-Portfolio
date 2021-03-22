@@ -1,4 +1,3 @@
-import React from 'react';
 import { labels } from '../assets/labels';
 import '../assets/styles.scss';
 
