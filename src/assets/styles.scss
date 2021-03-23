@@ -7,6 +7,7 @@ $zero: 0rem;
 $regularFont: 1.1rem;
 $labelsDistance: 3vw;
 $sideDistance: 4vw;
+$topDistance: 4vh;
 $artHeight: 75vh;
 $fadedElement: 70%;
 $silverLine: 2px solid silver;
@@ -55,6 +56,23 @@ a {
   &__uppercase {
     text-transform: uppercase;
   }
+
+  &__light {
+    font-weight: 300;
+    &--name {
+      font-size: 2.3em;
+      letter-spacing: 0.7pt;
+    }
+  }
+
+  &__info {
+    font-family: 'Lato', sans-serif;
+    h4 {
+      margin-block-start: 1vh;
+      margin-block-end: 1vh;
+      font-weight: 400;
+    }
+  }
 }
 
 .element {
@@ -97,6 +115,9 @@ a {
     i {
       margin: 0.5vh;
     }
+    &--gold {
+      color: $textGold;
+    }
   }
 
   &__img {
@@ -116,12 +137,15 @@ a {
   opacity: $fadedElement;
 
   &__top {
-    margin: 4vh $sideDistance;
+    margin: 2vh $sideDistance $topDistance $sideDistance;
     display: flex;
     justify-content: space-between;
-
     &--header {
+      margin-top: $topDistance;
       justify-content: flex-end;
+    }
+    &--navigation {
+      margin-top: $topDistance;
     }
   }
 
@@ -150,13 +174,20 @@ a {
     }
   }
 
-  &__placeholder {
-    margin-right: auto;
-    width: 14.1vw;
+  &__artwork {
+    margin-right: 4em;
+    max-width: 14.1vw;
   }
 
   &__labels {
     margin: -1rem $labelsDistance;
+    &--name {
+      margin-left: 1vw;
+    }
+    &--icon {
+      margin-top: 1em;
+      margin-right: 0.5vw;
+    }
   }
 }
 
@@ -235,6 +266,11 @@ a {
     &--bwhite {
       background-image: url('./IMG/black-white.jpg');
     }
+  }
+
+  &__art {
+    display: flex;
+    width: 52vw;
   }
 
   &__black {

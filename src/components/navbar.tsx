@@ -13,7 +13,7 @@ const Navbar = () => (
       </Link>
     </div>
 
-    <Box display="flex">
+    <Box display="flex" className="position__top--navigation">
       <Link to="/arts">
         <button className="element__button--nav">{labels.arts}</button>
       </Link>

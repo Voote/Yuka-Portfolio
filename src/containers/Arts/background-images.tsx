@@ -21,7 +21,7 @@ export const images: objectType[] = [
     class: 'background__img--noy',
     name: 'The Noy',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
-    tool: 'Photoshop',
+    tool: 'Procreate',
     date: 'Feb 2021'
   },
   {
@@ -37,7 +37,7 @@ export const images: objectType[] = [
     class: 'background__img--duncan',
     name: 'Duncan Dracohorn',
     describtion: `It is Yuka, the Noy, she said: Hi!`,
-    tool: 'Photoshop',
+    tool: 'Procreate',
     date: 'Jan 2021'
   },
   {

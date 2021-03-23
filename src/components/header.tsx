@@ -10,6 +10,7 @@ const Header = () => (
       <span className="labels__logo--gold">
         {labels.art}
         {/* <i className="fab fa-facebook-messenger" /> */}
+        {/* <i className="fa fa-chevron-circle-left" /> */}
       </span>
     </span>
   </header>

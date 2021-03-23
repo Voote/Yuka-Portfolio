@@ -1,14 +1,12 @@
-Simple Portfolio of Yuka27 artworks
+# Simple Portfolio of Yuka27 artworks
 
-# TODO:
+## TODO:
 
 ### 1. Arts: information on hover each art
 
-### 2. ArtPage fetch information about element by ID
+### 2. AboutMe
 
-### 3. ArtPage adjusted
-
-### 4. AboutMe
+### \***\*\_\_\_\*\***
 
 > ##### 270 left 14.063%
 >
@@ -20,7 +18,7 @@ Simple Portfolio of Yuka27 artworks
 >
 > ##### 1920 width
 >
-> ##### ****\_\_\_****
+> ##### \***\*\_\_\_\*\***
 >
 > ##### 158 top 11.997%
 >
@@ -32,7 +30,7 @@ Simple Portfolio of Yuka27 artworks
 >
 > ##### 1317 hight
 >
-> ##### ****\_\_****
+> ##### \***\*\_\_\*\***
 >
 > ##### 72 left 3.75%
 >

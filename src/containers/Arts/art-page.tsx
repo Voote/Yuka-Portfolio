@@ -21,23 +21,54 @@ const ArtPage = () => {
   const artDate = images[id].date;
 
   return (
-    <div className="background__placeholder background__placeholder--white">
+    <div className="background__placeholder background__placeholder--black">
       <Navbar />
       <Box display="flex">
-        <div className="position__placeholder">
-          <nav>
-            <div className={smallImgTop} />
-            <div className={smallImgRandom} />
-          </nav>
-        </div>
-        <div>
+        <div className="background__art">
+          <div className="position__artwork">
+            <nav>
+              <div className={smallImgTop} />
+              <div className={smallImgRandom} />
+            </nav>
+          </div>
           <div className={bigImg} />
         </div>
-        <div className="background__black background__img--big">
-          <div className="position__labels">
-            <h1 className="labels__uppercase">{artName}</h1>
-            <div className="element__line element__line--lifted" />
-            <p>{artInfo}</p>
+        <div className="background__black background__img--big position__labels">
+          <div className="position__bottom--on-line">
+            <Box display="flex">
+              <i
+                className="far 
+              fa-arrow-alt-circle-left 
+              fa-2x 
+              position__labels--icon"
+              />
+              <h1
+                className="labels__uppercase 
+              labels__light 
+              labels__light--name 
+              position__labels--name"
+              >
+                {artName}
+              </h1>
+            </Box>
+            <Box display="flex">
+              <i
+                className="fab 
+              fa-pinterest fa-2x 
+              position__labels--icon 
+              element__icons--gold"
+              />
+              <i
+                className="fab 
+              fa-instagram fa-2x 
+              position__labels--icon 
+              element__icons--gold"
+              />
+            </Box>
+          </div>
+          <div className="element__line element__line--lifted" />
+          <span className="labels__info">
+            <p className="labels__light">{artInfo}</p>
             <h4>
               {labels.tool}
               {artTool}
@@ -46,7 +77,7 @@ const ArtPage = () => {
               {labels.madeAt}
               {artDate}
             </h4>
-          </div>
+          </span>
         </div>
       </Box>
       <Footer />
