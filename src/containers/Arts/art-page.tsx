@@ -56,14 +56,14 @@ const ArtPage = () => {
             </Box>
             <div className="element__icons--gold">
               <Box display="flex">
-                <a>
+                <a href="/">
                   <i
                     className="fab 
               fa-pinterest fa-2x 
               position__labels--icon"
                   />
                 </a>
-                <a>
+                <a href="/">
                   <i
                     className="fab 
               fa-instagram fa-2x 
