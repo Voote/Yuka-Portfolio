@@ -11,5 +11,6 @@ export const labels: labelType = {
   seeArts: 'SEE ARTS ',
   arts: 'ARTS',
   tool: 'Tool: ',
-  madeAt: 'Made at '
+  madeAt: 'Made at ',
+  viewDetails: 'view details of '
 };

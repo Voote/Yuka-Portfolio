@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import Grid from '@material-ui/core/Grid';
+import { Grid } from '@material-ui/core';
 
+import ArtInfo from './art-info';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import { images } from './background-images';
@@ -12,12 +13,19 @@ const Arts = () => (
     <div className="position__gallery">
       <Grid container>
         {images.map((element) => {
-          const imgClass = `background__img ${element.class}`;
+          const imgClass = `background__img ${element.class} element__parent`;
           return (
             <Grid item key={element.id} xs={4}>
-              <Link to={`/artpage/${element.id}`}>
-                <div className={imgClass} />
-              </Link>
+              <div className="element__gallery">
+                {/* tutaj sie dzieje magia */}
+                <Link to={`/artpage/${element.id}`}>
+                  <ArtInfo
+                    imgClass={imgClass}
+                    artName={element.name}
+                    artDate={element.date}
+                  />
+                </Link>
+              </div>
             </Grid>
           );
         })}

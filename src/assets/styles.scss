@@ -8,8 +8,9 @@ $regularFont: 1.1rem;
 $labelsDistance: 3vw;
 $sideDistance: 4vw;
 $topDistance: 4vh;
+$oneThird: 30.2vw;
 $artHeight: 75vh;
-$fadedElement: 70%;
+$fadedElement: 60%;
 $silverLine: 2px solid silver;
 
 html,
@@ -36,6 +37,12 @@ a {
   font-size: 3em;
   &__logo {
     font-size: 1.5em;
+    h4 {
+      font-size: 1.4em;
+      font-weight: 300;
+      letter-spacing: 0.7pt;
+      text-decoration: $silverLine underline;
+    }
     &--gold {
       color: $textGold;
       font-weight: 300;
@@ -81,9 +88,6 @@ a {
     &--lifted {
       margin-top: -3vh;
     }
-    &--footer {
-      opacity: $fadedElement;
-    }
   }
 
   &__button {
@@ -91,7 +95,7 @@ a {
       background: #0000;
       color: $textWhite;
       font-weight: 300;
-      margin-right: 1rem;
+      margin-right: 2em;
       border: none;
     }
     &--gallery {
@@ -115,18 +119,51 @@ a {
     i {
       margin: 0.5vh;
     }
+    &--hover a:hover {
+      color: $textGold;
+    }
     &--gold {
       color: $textGold;
+      a :hover {
+        color: $textWhite;
+      }
+    }
+    &--red :hover {
+      color: red;
     }
   }
 
   &__img {
-    width: 31vw;
+    width: $oneThird;
     height: 30vh;
   }
 
   &__active {
     border: 1px solid $textGold;
+  }
+
+  &__hover :hover {
+    text-decoration: $silverLine underline;
+  }
+
+  &__dimmed {
+    opacity: $fadedElement;
+  }
+
+  &__gallery {
+    background-color: black;
+  }
+
+  &__parent:hover {
+    opacity: $fadedElement;
+    // filter: blur(1pt) opacity(60%);
+    .element__child {
+      display: block;
+    }
+  }
+
+  &__child {
+    display: none;
   }
 }
 
@@ -134,7 +171,6 @@ a {
   display: flex;
   justify-content: space-between;
   padding: $zero $sideDistance;
-  opacity: $fadedElement;
 
   &__top {
     margin: 2vh $sideDistance $topDistance $sideDistance;
@@ -188,6 +224,14 @@ a {
       margin-top: 1em;
       margin-right: 0.5vw;
     }
+    &--info {
+      padding-top: 10vw;
+      text-align: center;
+      h4 {
+        margin-block-start: $zero;
+        margin-block-end: $zero;
+      }
+    }
   }
 }
 
@@ -220,8 +264,8 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 31vw;
-    height: 31vw;
+    width: $oneThird;
+    height: $oneThird;
     &--big {
       width: 37.6vw;
       height: $artHeight;
@@ -277,6 +321,5 @@ a {
     width: 48.3vw;
     height: $artHeight;
     color: $textWhite;
-    // background: black;
   }
 }

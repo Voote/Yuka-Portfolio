@@ -13,13 +13,15 @@ const Navbar = () => (
       </Link>
     </div>
 
-    <Box display="flex" className="position__top--navigation">
-      <Link to="/arts">
-        <button className="element__button--nav">{labels.arts}</button>
-      </Link>
-      <Link to="/about">
-        <button className="element__button--nav">{labels.about}</button>
-      </Link>
+    <Box display="flex" className="position__top--navigation ">
+      <Box display="flex" className="element__hover">
+        <Link to="/arts">
+          <button className="element__button--nav">{labels.arts}</button>
+        </Link>
+        <Link to="/about">
+          <button className="element__button--nav">{labels.about}</button>
+        </Link>
+      </Box>
       <SMIcons />
     </Box>
   </div>

@@ -1,4 +1,5 @@
 import '../../assets/styles.scss';
+import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { Box } from '@material-ui/core';
 
@@ -35,13 +36,15 @@ const ArtPage = () => {
         </div>
         <div className="background__black background__img--big position__labels">
           <div className="position__bottom--on-line">
-            <Box display="flex">
-              <i
-                className="far 
+            <Box display="flex" className="element__icons--hover">
+              <Link to="/arts">
+                <i
+                  className="far 
               fa-arrow-alt-circle-left 
               fa-2x 
               position__labels--icon"
-              />
+                />
+              </Link>
               <h1
                 className="labels__uppercase 
               labels__light 
@@ -51,20 +54,24 @@ const ArtPage = () => {
                 {artName}
               </h1>
             </Box>
-            <Box display="flex">
-              <i
-                className="fab 
+            <div className="element__icons--gold">
+              <Box display="flex">
+                <a>
+                  <i
+                    className="fab 
               fa-pinterest fa-2x 
-              position__labels--icon 
-              element__icons--gold"
-              />
-              <i
-                className="fab 
+              position__labels--icon"
+                  />
+                </a>
+                <a>
+                  <i
+                    className="fab 
               fa-instagram fa-2x 
-              position__labels--icon 
-              element__icons--gold"
-              />
-            </Box>
+              position__labels--icon "
+                  />
+                </a>
+              </Box>
+            </div>
           </div>
           <div className="element__line element__line--lifted" />
           <span className="labels__info">
