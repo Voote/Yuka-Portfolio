@@ -4,11 +4,13 @@ $textWhite: #fafafa;
 $textGold: #f6b004;
 $transparentButton: #e9561636;
 $zero: 0rem;
+$constantSize: 1em;
 $regularFont: 1.1rem;
 $labelsDistance: 3vw;
 $sideDistance: 4vw;
 $topDistance: 4vh;
 $oneThird: 30.2vw;
+$artSize: 53.5vw;
 $artHeight: 75vh;
 $fadedElement: 60%;
 $silverLine: 2px solid silver;
@@ -35,8 +37,11 @@ a {
 
 .labels {
   font-size: 3em;
+  &--top {
+    // padding-top: 1rem; header.tsx
+  }
   &__logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     h4 {
       font-size: 1.4em;
       font-weight: 300;
@@ -99,7 +104,10 @@ a {
     &--nav {
       background: #0000;
       color: $textWhite;
+      font-size: 1.2em;
       font-weight: 300;
+      transform: scaleY(1.25);
+      letter-spacing: -0.4pt;
       margin-right: 2em;
       border: none;
     }
@@ -229,8 +237,10 @@ a {
       margin-left: 1vw;
     }
     &--icon {
-      margin-top: 1em;
-      margin-right: 0.5vw;
+      margin-top: $constantSize;
+    }
+    &--first a:first-child {
+      margin-right: $constantSize;
     }
     &--info {
       padding-top: 10vw;
@@ -254,6 +264,7 @@ a {
     width: 100%;
     height: 100%;
     color: $textWhite;
+    z-index: 1;
     &--black {
       background-image: url('./IMG/black-white.jpg');
     }
@@ -326,12 +337,21 @@ a {
 
   &__art {
     display: flex;
-    width: 52vw;
+    width: $artSize;
   }
 
   &__black {
-    width: 48.3vw;
+    width: 42.5vw;
     height: $artHeight;
     color: $textWhite;
+  }
+
+  &__about {
+    background-image: url('./IMG/TheNoy.jpg');
+    background-size: cover;
+    background-position: center left;
+    height: 100%;
+    width: $artSize;
+    z-index: -1;
   }
 }

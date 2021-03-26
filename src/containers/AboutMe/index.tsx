@@ -2,31 +2,34 @@
 import { Box } from '@material-ui/core';
 import Header from '../../components/header';
 import Navbar from '../../components/navbar';
-import Footer from '../../components/footer';
-import { labels } from '../../assets/labels';
+// import { labels } from '../../assets/labels';
 import '../../assets/styles.scss';
 
 const AboutMe = () => (
   <div className="background__placeholder background__placeholder--white">
+    <div className="background__placeholder background__about" />
     <Navbar />
     <Box display="flex">
-      <div className="background__art background__img background__img--about background__img--noy" />
+      <div className="background__art" />
       <div className="background__black background__img--big position__labels">
         <div className="position__bottom--on-line">
           <Header />
-          <Box display="flex" className="element__icons--gold">
+          <Box
+            display="flex"
+            className="element__icons--gold position__labels--first"
+          >
             <a href="/">
               <i
                 className="fab
                   fa-facebook-messenger
-                fa-2x 
+                fa-3x 
               position__labels--icon"
               />
             </a>
             <a href="/">
               <i
                 className="far 
-                  fa-envelope fa-2x 
+                  fa-envelope fa-3x 
               position__labels--icon"
               />
             </a>
@@ -65,7 +68,6 @@ const AboutMe = () => (
         </span>
       </div>
     </Box>
-    <Footer />
   </div>
 );
 
