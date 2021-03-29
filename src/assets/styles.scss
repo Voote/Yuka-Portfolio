@@ -38,7 +38,7 @@ a {
 .labels {
   font-size: 3em;
   &--top {
-    // padding-top: 1rem; header.tsx
+    // padding-top: 1rem; header.tsx -> wystarczajaco dobry rozmiar czcionki?
   }
   &__logo {
     font-size: 1.8em;
@@ -88,7 +88,7 @@ a {
 
   &__placeholder {
     font-family: 'Lato', sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.15vw;
   }
 }
 
@@ -232,7 +232,7 @@ a {
   }
 
   &__labels {
-    margin: -1rem $labelsDistance;
+    margin: -1rem $sideDistance;
     &--name {
       margin-left: 1vw;
     }

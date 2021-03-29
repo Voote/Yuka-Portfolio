@@ -17,7 +17,6 @@ const Arts = () => (
           return (
             <Grid item key={element.id} xs={4}>
               <div className="element__gallery">
-                {/* tutaj sie dzieje magia */}
                 <Link to={`/artpage/${element.id}`}>
                   <ArtInfo
                     imgClass={imgClass}
