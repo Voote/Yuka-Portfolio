@@ -9,10 +9,10 @@ export const theme = createMuiTheme({
 
   palette: {
     primary: {
-      main: '#ffbee0'
+      main: '#fafafa'
     },
     secondary: {
-      main: '#4e4e4e'
+      main: '#f6b004'
     }
   }
 });

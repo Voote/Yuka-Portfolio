@@ -11,31 +11,22 @@ const AboutMe = () => (
     <Box display="flex">
       <div className="background__art" />
       <div className="background__black background__img--big position__labels">
-        <div className="position__bottom--on-line">
+        <div className="position__bottom--on-line element__hidden">
           <Header />
           <Box
             display="flex"
             className="element__icons--gold position__labels--first"
           >
             <a href="/">
-              <i
-                className="fab
-                  fa-facebook-messenger
-                fa-3x 
-              position__labels--icon"
-              />
+              <i className="fab fa-facebook-messenger fa-3x position__labels--icon" />
             </a>
             <a href="/">
-              <i
-                className="far 
-                  fa-envelope fa-3x 
-              position__labels--icon"
-              />
+              <i className="far fa-envelope fa-3x position__labels--icon" />
             </a>
           </Box>
         </div>
         <div className="element__line element__line--lifted" />
-        <span className="labels__placeholder">
+        <span className="labels__info labels__info--small">
           <p>{labels.aboutPar1}</p>
           <p>{labels.aboutPar2}</p>
           <p>{labels.aboutPar3}</p>

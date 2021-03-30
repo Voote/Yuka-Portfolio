@@ -8,7 +8,7 @@ import Footer from '../../components/footer';
 import { labels } from '../../assets/labels';
 import { images } from '../../containers/Arts/background-images';
 
-const getRandom = (max) => Math.floor(Math.random() * Math.floor(max));
+const getRandom = (max: number) => Math.floor(Math.random() * Math.floor(max));
 
 const ArtPage = () => {
   const { id }: { id: number } = useParams();
@@ -38,37 +38,19 @@ const ArtPage = () => {
           <div className="position__bottom--on-line">
             <Box display="flex" className="element__icons--hover">
               <Link to="/arts">
-                <i
-                  className="far 
-              fa-arrow-alt-circle-left 
-              fa-2x 
-              position__labels--icon"
-                />
+                <i className="far fa-arrow-alt-circle-left fa-2x position__labels--icon" />
               </Link>
-              <h1
-                className="labels__uppercase 
-              labels__light 
-              labels__light--name 
-              position__labels--name"
-              >
+              <h1 className="labels__uppercase labels__light labels__light--name position__labels--name">
                 {artName}
               </h1>
             </Box>
             <div className="element__icons--gold">
               <Box display="flex">
                 <a href="/">
-                  <i
-                    className="fab 
-              fa-pinterest fa-2x 
-              position__labels--icon"
-                  />
+                  <i className="fab fa-pinterest fa-2x position__labels--icon" />
                 </a>
                 <a href="/">
-                  <i
-                    className="fab 
-              fa-instagram fa-2x 
-              position__labels--icon "
-                  />
+                  <i className="fab fa-instagram fa-2x position__labels--icon " />
                 </a>
               </Box>
             </div>

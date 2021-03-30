@@ -34,5 +34,6 @@ export const labels: labelType = {
   Amet cursus sit amet dictum sit.`,
   aboutPar3: `accumsan lacus. Leo in vitae turpis massa. Consectetur adipiscing
   elit pellentesque habitant morbi tristique. Amet cursus sit amet
-  dictum sit.`
+  dictum sit.`,
+  thankYou: 'THANK YOU FOR VISITING ME!'
 };

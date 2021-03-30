@@ -40,6 +40,7 @@ a {
   &--top {
     // padding-top: 1rem; header.tsx -> wystarczajaco dobry rozmiar czcionki?
   }
+
   &__logo {
     font-size: 1.8em;
     h4 {
@@ -84,11 +85,9 @@ a {
       margin-block-end: 1vh;
       font-weight: 400;
     }
-  }
-
-  &__placeholder {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15vw;
+    &--small {
+      font-weight: 1.15vw;
+    }
   }
 }
 
@@ -96,7 +95,7 @@ a {
   &__line {
     border-bottom: $silverLine;
     &--lifted {
-      margin-top: -3vh;
+      margin-top: -1.5em;
     }
   }
 
@@ -146,11 +145,6 @@ a {
     }
   }
 
-  &__img {
-    width: $oneThird;
-    height: 30vh;
-  }
-
   &__active {
     border: 1px solid $textGold;
   }
@@ -176,6 +170,10 @@ a {
   }
 
   &__child {
+    display: none;
+  }
+
+  &__hidden .labels__logo--gold {
     display: none;
   }
 }
@@ -207,9 +205,6 @@ a {
     &--on-line {
       justify-content: space-between;
       display: flex;
-      .labels__logo--gold {
-        display: none;
-      }
     }
   }
 
@@ -285,10 +280,6 @@ a {
     background-position: center center;
     width: $oneThird;
     height: $oneThird;
-    &--about {
-      width: 57vw;
-      height: $artHeight;
-    }
     &--big {
       width: 37.6vw;
       height: $artHeight;
@@ -298,9 +289,6 @@ a {
       height: 24vh;
       margin-bottom: 1vh;
       margin-left: $sideDistance;
-    }
-    &--left {
-      background-position: left center;
     }
     &--cat {
       background-image: url('./IMG/Catalyn.jpg');
@@ -321,17 +309,11 @@ a {
       background-image: url('./IMG/Wanda.jpg');
       background-position: center top;
     }
-    &--black {
-      background-image: url('./IMG/goku-black.jpg');
-    }
     &--blue {
       background-image: url('./IMG/goku-blue.jpg');
     }
     &--white {
       background-image: url('./IMG/goku-white.png');
-    }
-    &--bwhite {
-      background-image: url('./IMG/black-white.jpg');
     }
   }
 
