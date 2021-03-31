@@ -7,7 +7,6 @@ export const labels: labelType = {
   the: 'THE ',
   noy: 'NOY',
   art: 'ART',
-  space: ' ',
   seeArts: 'SEE ARTS ',
   arts: 'ARTS',
   tool: 'Tool: ',
