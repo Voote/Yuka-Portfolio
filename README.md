@@ -1,4 +1,4 @@
-# Simple Portfolio of Yuka27 artworks
+# Simple Portfolio of theNoy artworks
 
 ## Project Status
 
@@ -12,27 +12,21 @@ This project is currently in development. Users can found information of each ar
 >
 > - hover text on art to be more visible
 
-## Project Screen Shot
-
-### [ How to add screen shot here? ]
-
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
-
 ## Installation and Setup Instructions
 
-> Clone down this repository. You will need node and npm installed globally on your machine.
+> Clone down this repository. You will need node and yarn installed globally on your machine.
 >
 > > Installation:
 > >
-> > npm install
+> > yarn
 >
 > > To Run Test Suite:
 > >
-> > npm test
+> > yarn test
 >
 > > To Start Server:
 > >
-> > npm start
+> > yarn start
 >
 > > To Visit App:
 > >
@@ -42,7 +36,7 @@ This project is currently in development. Users can found information of each ar
 
 This project was an exercise, helping me to understand TypeScript and familiarizing myself with documentation for new features.
 
-Except for TypeScript I used here React, Sass, Material, and Prettier.
+Except for TypeScript I used here React, React-Router, Sass, Material, and Prettier.
 
 This artbook are based on:
 

@@ -4,7 +4,7 @@ export type labelType = {
 
 export const labels: labelType = {
   about: 'ABOUT ME',
-  the: 'THE ',
+  the: 'THE',
   noy: 'NOY',
   art: 'ART',
   seeArts: 'SEE ARTS ',
