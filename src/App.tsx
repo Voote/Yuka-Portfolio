@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom';
+import Arts from './containers/Arts';
+import AboutMe from './containers/AboutMe';
+import Landing from './containers/Landing';
+import ArtPage from './containers/Arts/art-page';
+import './assets/styles.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <Router>
+      <Switch>
+        <Route path="/artpage/:id">
+          <ArtPage />
+        </Route>
+        <Route path="/landing">
+          <Landing />
+        </Route>
+        <Route path="/arts">
+          <Arts />
+        </Route>
+        <Route path="/about">
+          <AboutMe />
+        </Route>
+        <Route path="/">
+          <Redirect to="/landing" />
+        </Route>
+      </Switch>
+    </Router>
+  </div>
+);
 
 export default App;
