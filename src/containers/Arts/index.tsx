@@ -13,7 +13,7 @@ const Arts = () => (
     <div className="position__gallery">
       <Grid container>
         {images.map((element) => {
-          const imgClass = `background__img ${element.class} element__parent`;
+          const imgClass = `background__img ${element.class} element element__parent`;
           return (
             <Grid item key={element.id} xs={4}>
               <div className="element__gallery">

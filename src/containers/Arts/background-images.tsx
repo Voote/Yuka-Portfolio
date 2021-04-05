@@ -60,16 +60,16 @@ export const images: objectType[] = [
     id: 6,
     class: 'background__img--white',
     name: 'SSJ Howaito',
-    describtion: `It is Yuka, the Noy, she said: Hi!`,
-    tool: 'Photoshop',
+    describtion: `It is Goku, he's in Sūpā Saiya-jin Howaito mode`,
+    tool: 'Google Images',
     date: 'Jul 2017'
   },
   {
     id: 7,
     class: 'background__img--blue',
     name: 'SSJ Blue',
-    describtion: `It is Yuka, the Noy, she said: Hi!`,
-    tool: 'Photoshop',
+    describtion: `It is Goku, he's in Sūpā Saiya-jin Goddo Sūpā Saiya-jin mode`,
+    tool: 'Google Images',
     date: 'Apr 2015'
   },
   {

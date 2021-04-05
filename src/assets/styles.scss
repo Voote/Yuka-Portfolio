@@ -89,6 +89,8 @@ a {
 }
 
 .element {
+  width: $oneThird;
+  height: $oneThird;
   &__line {
     border-bottom: $silverLine;
     &--lifted {
@@ -160,14 +162,15 @@ a {
 
   &__parent:hover {
     opacity: $fadedElement;
-    // filter: blur(5px);
-    .element__child {
+    filter: blur(5px);
+    ~ .element__child {
       display: block;
     }
   }
 
   &__child {
     display: none;
+    position: absolute;
   }
 
   &__hidden .labels__logo--gold {
@@ -275,8 +278,6 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: $oneThird;
-    height: $oneThird;
     &--big {
       width: 37.6vw;
       height: $artHeight;
