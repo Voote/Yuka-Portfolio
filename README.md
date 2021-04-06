@@ -10,7 +10,7 @@ This project is currently in development. Users can found information of each ar
 >
 > - background art
 >
-> - hover text on art to be more visible
+> - hover improvment
 
 ## Installation and Setup Instructions
 
