@@ -1,5 +1,26 @@
 # Simple Portfolio of theNoy artworks
 
+### Created using React with MaterialUI and Testing-Library
+###
+### Converted to Typescript
+
+## Screenshots
+|![Landing Page](IMG/../public/IMG/Screenshots/Landing.png)|
+|:--:|
+|*Landing page*|
+
+|![Gallery Page](IMG/../public/IMG/Screenshots/Gallery.png)|
+|:--:|
+|*Gallery page*|
+
+|![AboutMe Vage](IMG/../public/IMG/Screenshots/AboutMe.png)|
+|:--:|
+|*AboutMe view*|
+
+|![Picture View](IMG/../public/IMG/Screenshots/Picture.png)|
+|:--:|
+|*Picture view*|
+
 ## Project Status
 
 This project is currently in development. Users can found information of each artwork. Functionality to see create process, will be added in future.
